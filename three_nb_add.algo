@@ -1,0 +1,21 @@
+ALGORITHM three_nb_add
+VAR
+    nombredecaractère,nombredevoyelle,nombredemot : INTEGER;
+    phrase= STRING
+BEGIN
+    FOR i =1 ; i<= lenght.phrase ; i++  DO
+        IF (phrase [i] == " " or phrase [i]== ".") THEN
+            nombredemot= nombredemot+1
+        END_IF
+        IF (phrase [i] == "a" or phrase[i]=="o" or phrase[i]=="e" or phrase [i]= "y" or phrase[i]=="i" or phrase[i]=="u" ) THEN
+            nombredevoyelle= nombredevoyelle+1
+        END_IF
+        
+    END_FOR
+    write(nombredemot=nombredemot)
+    read(nombredemot=nombredemot)
+    write(nombredevoyelle=nombredevoyelle)
+    read(nombredevoyelle=nombredevoyelle)
+    write(nombredecaractère=nombredecaractère)
+    read(nombredecaractère=nombredecaractère)
+END
